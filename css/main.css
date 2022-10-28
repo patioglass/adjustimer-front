@@ -1,0 +1,77 @@
+body {
+    margin: 0 auto;
+    text-align: center;
+}
+#wrapper {
+    padding: 30px;
+    background-color: #ccc;
+}
+#remaining_time_wrapper {
+    margin-top: 60px;
+    font-size: 50px;
+    color: #77D5FF;
+    font-weight: bold;
+    letter-spacing : 10px;
+}
+.howto_link {
+    text-decoration: none;
+    color: #444;
+    padding: 10px 40px;
+    border: #ccc 1px solid;
+    border-radius: 5px;
+}
+.howto_link:hover {
+    color: white;
+    border-color: #208ed8;
+    background-color: rgb(102, 219, 255);
+}
+.button__sync {
+    font-size: 20px;
+    color: white;
+    width: 300px;
+    font-weight: bold;
+    background-color: rgb(88, 86, 85);
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0 auto;
+}
+#button__get_video_info {
+    background-color: coral !important;
+    cursor: pointer;
+}
+#button__get_video_info:hover {
+    background-color: rgb(230, 61, 0) !important;
+}
+#video__title {
+    font-size: 70%;
+    margin-bottom: 20px;
+}
+.entry {
+    display: inline-block;
+    margin-left: 15px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    padding: 7px;
+}
+.color-picker-wrapper {
+    margin-top: 15px;
+}
+.word-text-stroke {
+    text-shadow:
+        3px 3px 3px #000,
+        -3px 3px 3px #000,
+        3px -3px 3px #000,
+        -3px -3px 3px #000,
+        3px 0px 3px #000,
+        3px 3px 3px #000,
+        -3px 0px 3px #000,
+        0px -3px 3px #000;
+}
+.anniversary-img {
+    width: 150px;
+}
+
+#video__url {
+    display: none;
+}

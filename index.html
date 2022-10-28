@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+    <title>AdjusTimer</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="./css/main.css"/>
+
+    <!-- One of the following themes -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/> <!-- 'classic' theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/monolith.min.css"/> <!-- 'monolith' theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css"/> <!-- 'nano' theme -->
+
+    <!-- Modern or es5 bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.es5.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</head>
+<body>
+    <h1><img src="./img/icon48.png">AdjusTimer(アジャスタイマー)</h1>
+    <h2>最終更新:<span class="version-info">2022/10/19(Ver. 1.18)</span></h2>
+    <img class="anniversary-img" src="https://raw.githubusercontent.com/patioglass/adjustimer/main/src/img/users_thanks.png">
+    <br>
+    <br>
+    <div class="policy">サービス向上のため、動画情報を収集させていただいております（詳細は<a href="https://patiopatimon.com/adjustimer/privacy.html" target="_blank">プライバシーポリシー</a>を参照ください）</div>
+    <div id="video__url"></div>
+    <div id="button__start">対応ページの画面から起動してください(対応ページについては「<a href="https://patiopatimon.com/adjustimer" target="_blank">使い方ページ</a>」を参考にしてください)</div>
+    <h2>現在ページ: <span id="current_page_name"><未対応のページ></span>です</h2>
+
+    <div class="button__sync">情報を取得する</div>
+
+    <div class="color-picker-wrapper">
+        <p><input id="switch_border" type="checkbox" checked="checked">縁取り</p>
+        <p><select name="文字フォント選択">
+            <option value="'Segoe UI',Arial,Meiryo,sans-serif">通常</option>
+            <option value="'M PLUS Rounded 1c'">M PLUS Rounded 1c</option>
+            <option value="'Nico Moji'">ニコモジ</option>
+            <option value="'Sawarabi Gothic'">さわらびゴシック</option>
+            <option value="'Noto Sans JP'">Noto Sans JP</option>
+        </select></p>
+        <div class="entry">
+            <div class="innr">
+                <div class="another">
+                    <div class="word-color-picker"></div>
+                    <span>文字色の変更</span>
+                </div>
+            </div>
+        </div>
+        <div class="entry" id="border-wrapper">
+            <div class="innr">
+                <div class="another">
+                    <div class="border-color-picker"></div>
+                    <span>文字縁取り色の変更</span>
+                </div>
+            </div>
+        </div>
+        <div class="entry">
+            <div class="innr">
+                <div class="another">
+                    <div class="background-color-picker"></div>
+                    <span>背景色の変更</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="wrapper">
+        <div id="remaining_time_wrapper">
+            <div id="video__title" class="word-text-stroke">(未取得)</div>
+            <div id="video__time">
+                <span id="video__time_current" class="word-text-stroke">00:00:00</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
